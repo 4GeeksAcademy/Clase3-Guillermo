@@ -8,33 +8,130 @@
     <title>Formulario</title>
 </head>
 <body>
-    <!-- Formumario -->
-    <form action="URL" method="get">
-        <!-- Card -->
-        <div class="card text-center">
+  <div class="container-fluid d-flex justify-content-center p-5">
+     <!-- Card -->
+      <div class="card  col-12">
             <!-- Header -->
-            <div class="card-header">
-              Payment form example
-            </div>
+        <div class="card-header">
+          <h2>Payment form example</h2>
+        </div>
             <!-- Body -->
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <div class="card-body">
+                  <!-- Formumario -->
+          <form action="URL" method="get">
+            <!-- alert -->
+            <div class="p-3 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-3 mb-4 fw-bold">
+              Some fields are missing
             </div>
+            <!-- inputs -->
+            <!-- fila1 -->
+            <div class="row">
+              <!-- Card number -->
+              <div class="col-md-5">
+                <label for="card" class="form-label fw-bold">Card #</label>
+                <input type="number" class="form-control" id="card" placeholder="XXXXXXXXXXXXXXXXXXXXXX">
+              </div>
+              <!-- cvc -->
+              <div class="col-md-3">
+                <label for="cvc" class="form-label fw-bold">CVC #</label>
+                <input type="number" class="form-control" id="cvc" placeholder="0000">
+              </div>
+              <!-- amount -->
+              <div class="col-md-4">
+                <label for="amount" class="form-label fw-bold">Amount</label>
+                <div class="d-flex"><p>$</p><input type="number" class="form-control" id="amount" placeholder="Amount"></div>
+              </div>
+            </div>
+            <!-- fila2 -->
+            <div class="row py-3">
+              <!-- Fname -->
+              <div class="col-md-6">
+                <label for="fName" class="form-label fw-bold">Fierst Name</label>
+                <input type="text" class="form-control" id="fName">
+              </div>
+              <div class="col-md-6">
+                <label for="lName" class="form-label fw-bold">Last Name</label>
+                <input type="text" class="form-control" id="lName">
+              </div>
+            </div>
+              
+              <!-- fila3 -->
+              <div class="row py-3">
+                <!-- city -->
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label fw-bold">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <!-- state -->
+                <div class="col-md-4">
+                  <label for="state" class="form-label fw-bold">State</label>
+                  <select id="state" class="form-select">
+                    <option selected>Pick a state</option>
+                    <option>...</option>
+                  </select>
+                  <!-- postal code -->
+                </div>
+                <div class="col-md-2">
+                  <label for="postalCode" class="form-label fw-bold">Postal Code</label>
+                  <input type="number" class="form-control" id="postalCode">
+                </div>
+              </div>
+              <!-- fila4 -->
+              <div class="row py-3">
+                <!-- metodos de pago -->
+                <div class="col-md-6 ">
+                  <!-- recuadro -->
+                  <p class="fw-bold">We accept:</p>
+                  <span class="badge text-bg-secondary p-2">
+                    <!-- 1 -->
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard fa-2xl"></i></label>
+                  </div>
+                  <!-- 2 -->
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa fa-2xl"></i></label>
+                  </div>
+                  <!-- 3 -->
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                    <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-diners-club fa-2xl"></i></label>
+                  </div>
+                  <!-- 4 -->
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                    <label class="form-check-label" for="inlineRadio4"><i class="fa-brands fa-cc-amex fa-2xl"></i></label>
+                  </div>
+                </span>
+              </div>
+
+              <!-- comentarios -->
+              <div class="col-md-6">
+                <label for="floatingTextarea" class="form-label fw-bold">Message</label>
+                <textarea class="form-control" id="floatingTextarea" style="height: 100px" ></textarea>
+                <p>Add any notes here.</p>
+
+              </div>
+
+
+
+              </div>
+          </form>
+        </div>
             <!-- Footer -->
-            <div class="card-footer text-body-secondary">
+        <div class="card-footer text-body-secondary text-end">
                 <button type="reset" class="btn btn-secondary">Cancel</button>
                 <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-          </div>
+        </div>
+    </div>
+  </div>
 
 
 
 
 
 
-
-    </form>
 
 
 
